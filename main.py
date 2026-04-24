@@ -1,8 +1,9 @@
 import pandas as pd
 
 def main():
+
     # Load the dataset
-    df = pd.read_csv('data.csv')
+    df = pd.read_csv('/file/data.csv')
     
     # Display the first few rows of the dataset
     print(df.head())
@@ -14,7 +15,6 @@ def main():
     # Check for missing values
     print("Missing values:")
     print(df.isnull().sum())
-
     
 mydataset = {
   'cars': ["BMW", "Volvo", "Ford"],
@@ -33,3 +33,11 @@ mydataset2 = [
 ]
 myvar2 = pd.DataFrame(mydataset2)
 print(myvar2[myvar2['age'] > 25])
+
+
+
+
+
+read_file = pd.read_csv('file/data.csv')
+data_frame = pd.DataFrame(read_file)
+print(data_frame)
